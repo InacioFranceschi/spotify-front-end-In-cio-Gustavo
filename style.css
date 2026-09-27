@@ -541,3 +541,42 @@ input:focus-visible {
 .search button {
     align-self: flex-start;
 }
+
+@media (max-width: 480px) {
+
+.topbar {
+    padding: .75rem;
+}
+
+.content {
+    padding: .75;
+}
+
+.hero {
+    padding: 1.25rem;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+
+}
+
+.card-grid,
+.artist-grid
+.album-grid {
+    grid-template-columns: 1fr;
+}
+
+.section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.search button {
+    width: 100%;
+}
+
+.account-actions a {
+    text-align: center;
+}
+}
