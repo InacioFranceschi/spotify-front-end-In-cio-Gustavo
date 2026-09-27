@@ -335,3 +335,139 @@ img {
             #5b3912
         );
 }
+
+.artist-card {
+    text-align: center;
+}
+
+.artist-image {
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.artist-card h3 {
+    margin: .75rem 0 .2rem;
+    font-size: .95rem;
+}
+
+.artist-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.artist-one {
+    background: 
+        radial-gradient(
+            circle at 45% 35%,
+            #b88962 0 13%,
+            transparent 14%
+        ),
+        linear-gradient(
+            135deg,
+            #1e3d5b,
+            #090909
+        );
+}
+
+.artist-two {
+    background:
+        radial-gradient(
+            circle at 65% 35%,
+            #f0b25d 0 13%,
+            transparent 14%
+        ),
+        linear-gradient(
+            135deg,
+            #51391d,
+            #121212
+        );
+}
+
+.artist-three {
+    background:
+        radial-gradient(
+            circle at 40% 32%,
+            #8c8c8c 0 12%,
+            transparent 13%
+        ),
+        linear-gradient(
+            135deg,
+            #261f37,
+            #090909
+        );
+}
+
+.artist-four {
+    background:
+        radial-gradient(
+            circle at 58% 28%,
+            #c98b7e 0 13%,
+            transparent 14%
+        ),
+        linear-gradient(
+            135deg,
+            #542f2b,
+            #0d0d0d
+        );
+}
+
+.album-card {
+    padding: .75rem;
+    background: var(--surface);
+    border-radius: var(--radius);
+}
+
+.album-card:hover {
+    background: var(--surface-light);
+}
+
+.album-cover {
+    aspect-ratio: 1;
+    border-radius: 6px;
+}
+
+.album-card h3 {
+    margin: 0;
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.album-one {
+    background:
+        linear-gradient(
+            135deg,
+            #d7d0c1,
+            #202020 48%,
+            #000
+        );
+}
+
+.album-two {
+    background:
+        linear-gradient(
+            135deg,
+            #3d4d37,
+            #111 50%,
+            #777
+        );
+}
+
+.album-three {
+    background:
+        linear-gradient(
+            135deg,
+            #1b1b1b,
+            #754f27
+        );
+}
+
+.album-four {
+    background:
+        linear-gradient(
+            135deg,
+            #f1b7a8,
+            #4c7d9a
+        );
+}
+}
