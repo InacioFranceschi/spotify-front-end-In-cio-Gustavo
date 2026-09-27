@@ -1,7 +1,7 @@
 :root { 
     --background: #000000;
     --surface: #121212;
-    --surface-light: ##1f1f1f;
+    --surface-light: #1f1f1f;
     --text: #ffffff;
     --muted: #b3b3b3;
     --accent: #1ed760;
@@ -33,7 +33,6 @@ a {
 button,
 input {
     border: 0;
-
 }
 
 img {
@@ -47,12 +46,12 @@ img {
     gap: 1rem;
     padding: 1rem;
     background: var(--background);
-    border-buttom: 1px solid var(--border)
+    border-bottom: 1px solid var(--border);
 }
 
 .brand-mark { 
-    color: var(--accent)
-    font-size: 1.5rem;    
+    color: var(--accent);
+    font-size: 1.5rem;
 }
 
 .topnav{
@@ -67,7 +66,7 @@ img {
 }
 
 .topnav a:hover { 
-    color: var(--text)
+    color: var(--text);
 }
 
 .search {
@@ -78,7 +77,7 @@ img {
 
 .search label { 
     font-size: .85rem;
-    color: var(--muted)
+    color: var(--muted);
 }
 
 .search input { 
@@ -92,7 +91,7 @@ img {
 }
 
 .search input:focus { 
-    border-color: var(--accent)
+    border-color: var(--accent);
 }
 
 .search button {
@@ -125,7 +124,7 @@ img {
 }
 
 .account-actions .login {
-    padding: 7rem 1.2rem;
+    padding: .55rem 1.2rem;
     border-radius: 999px;
     background: var(--text);
     color: #000000;
@@ -177,13 +176,6 @@ img {
     border-radius: var(--radius);
 }
 
-.library-card {
-    margin-top: 1rem;
-    padding: 1rem;
-    background: var(--surface-light);
-    border-radius: var(--radius);
-}
-
 .library-card h3 {
     margin: 0 0 .5rem;
     font-size: 1rem;
@@ -201,7 +193,7 @@ img {
     border-radius: 999px;
     background: var(--text);
     color: #000000;
-    font: .85rem;
+    font-size: .85rem;
     font-weight: 700;
 }
 
@@ -286,8 +278,8 @@ img {
 
 .music-card button {
     margin-top: .75rem;
-    width: 2.5;
-    height: 2.5;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background: var(--accent);
     color: #000000;
@@ -306,11 +298,10 @@ img {
             #5d2a8a,
             #163c7a
         );
-
 }
 
 .cover-two {
-     background:
+    background:
         linear-gradient(
             135deg,
             #9f2d20,
@@ -428,6 +419,11 @@ img {
 }
 
 .album-card h3 {
+    margin: .75rem 0 .2rem;
+    font-size: .95rem;
+}
+
+.album-card p {
     margin: 0;
     color: var(--muted);
     font-size: .8rem;
@@ -487,10 +483,6 @@ img {
     margin: .3rem 0 0;
 }
 
-/* =========================
-   AJUSTES VISUAIS DOS CARDS
-   ========================= */
-
 .music-card,
 .album-card {
     transition:
@@ -516,12 +508,15 @@ img {
     transform: translateY(-3px);
 }
 
-
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
+}
+
+.main-content {
+    min-width: 0;
 }
 
 .hero,
@@ -544,127 +539,124 @@ input:focus-visible {
 
 @media (max-width: 480px) {
 
-.topbar {
-    padding: .75rem;
-}
+    .topbar {
+        padding: .75rem;
+    }
 
-.content {
-    padding: .75;
-}
+    .content {
+        padding: .75rem;
+    }
 
-.hero {
-    padding: 1.25rem;
-}
+    .hero {
+        padding: 1.25rem;
+    }
 
-.hero h1 {
-    font-size: 2.2rem;
+    .hero h1 {
+        font-size: 2.2rem;
+    }
 
-}
+    .card-grid,
+    .artist-grid,
+    .album-grid {
+        grid-template-columns: 1fr;
+    }
 
-.card-grid,
-.artist-grid
-.album-grid {
-    grid-template-columns: 1fr;
-}
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
-.section-heading {
-    align-items: flex-start;
-    flex-direction: column;
-}
+    .search button {
+        width: 100%;
+    }
 
-.search button {
-    width: 100%;
-}
-
-.account-actions a {
-    text-align: center;
-}
+    .account-actions a {
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
 
     .topbar {
         display: grid;
-
         grid-template-columns: 
             auto
             auto
             minmax(18rem, 32rem)
             auto;
-    align-items: center;
-    gap: 1.25rem;   
-    padding: 
-        .75rem
-        1.25rem;    
+        align-items: center;
+        gap: 1.25rem;
+        padding: .75rem 1.25rem;
+    }
+
+    .account-actions {
+        justify-content: flex-end;
+    }
+
+    .search {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .search input {
+        flex: 1;
+    }
+
+    .search button {
+        flex-shrink: 0;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 15rem minmax(0, 1fr);
+        align-items: start;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .sidebar {
+    position: static;
+    }
+
+    .card-grid,
+    .artist-grid,
+    .album-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        padding: 2.5rem;
+    }
+
+    .hero h1 {
+        max-width: 700px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 2rem;
+    }
 }
 
-.account-actions {
-    justify-content: flex-end;
-}
+@media (min-width: 1100px) {
 
-.search {
-    flex-direction: row;
-    align-items: center;
-}
-
-.search label {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.search input {
-    flex: 1;
-}
-
-.search button {
-    flex-shrink: 0;
-}
-
-.content{
-    display: grid;
-    grid-template-columns: 
-        15rem
-        minmax(0, 1fr);
-    
-    align-items: start;
-    gap: 1rem;
-    padding: 
-        1rem
-        1.5rem;
-}
-
-.sidebar {
-    position: sticky;
-    top: 1rem;
-}
-
-.hero {
-    padding: 2.5rem;
-}
-
-.hero h1 {
-    max-width: 700px;
-}
-
-.card-grid
-.artist-grid
-.album-grid {
-    grid-template-columns: 
-        repeat(4, minmax(0, 1fr));
-}
-
-.footer {
-    flex-direction: row;
-    justify-content: 
-        space-between;
-    align-items: center;
-    padding-inline: 2rem;
-}
+    .card-grid,
+    .artist-grid,
+    .album-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
