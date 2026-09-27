@@ -470,4 +470,19 @@ img {
             #4c7d9a
         );
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem 5rem;
+    border-top: 1px solid var(--border);
+}
+
+.footer strong{
+    color: var(--text);
+}
+
+.footer p {
+    margin: .3rem 0 0;
 }
