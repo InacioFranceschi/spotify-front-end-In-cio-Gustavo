@@ -205,3 +205,51 @@ img {
     font-weight: 700;
 }
 
+.hero {
+    padding: 1.5rem;
+    background:
+        linear-gradient(
+            135deg,
+            #242424,
+            #101010
+        );
+    border-radius: var(--radius);
+}
+
+.eyebrow {
+    margin: 0 0 .5rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 8vw, 4rem);
+    line-height: 1;
+}
+
+.hero p:last-child {
+    color: var(--muted);
+}
+
+.content-section {
+    margin-top: 1.5rem;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section-heading a {
+    color: var(--muted);
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.section-heading a:hover {
+    color: var(--text);
+}
