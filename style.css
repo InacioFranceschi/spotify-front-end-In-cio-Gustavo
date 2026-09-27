@@ -1,6 +1,6 @@
 :root { 
     --background: #000000;
-    --surfave: #121212;
+    --surface: #121212;
     --surface-light: ##1f1f1f;
     --text: #ffffff;
     --muted: #b3b3b3;
@@ -129,5 +129,79 @@ img {
     border-radius: 999px;
     background: var(--text);
     color: #000000;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sidebar { 
+    padding: 1rem;
+    background: var(--surface);
+    border-radius: var(--radius);
+}
+
+.sidebar-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.sidebar-heading h2 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.sidebar-heading button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--surface-light);
+    color: var(--text);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.sidebar-heading button:hover {
+    background: var(--border);
+}
+
+.library-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--surface-light);
+    border-radius: var(--radius);
+}
+
+.library-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--surface-light);
+    border-radius: var(--radius);
+}
+
+.library-card h3 {
+    margin: 0 0 .5rem;
+    font-size: 1rem;
+}
+
+.library-card p {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.library-card a {
+    display: inline-block;
+    padding: .55rem .9rem;
+    border-radius: 999px;
+    background: var(--text);
+    color: #000000;
+    font: .85rem;
+    font-weight: 700;
 }
 
