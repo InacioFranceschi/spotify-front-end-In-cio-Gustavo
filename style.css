@@ -486,3 +486,58 @@ img {
 .footer p {
     margin: .3rem 0 0;
 }
+
+/* =========================
+   AJUSTES VISUAIS DOS CARDS
+   ========================= */
+
+.music-card,
+.album-card {
+    transition:
+        background-color .2s ease,
+        transform .2s ease;
+}
+
+.music-card:hover,
+.album-card:hover {
+    transform: translateY(-3px);
+}
+
+.artist-card {
+    padding: .5rem;
+    border-radius: var(--radius);
+    transition:
+        background-color .2s ease,
+        transform .2s ease;
+}
+
+.artist-card:hover {
+    background: var(--surface);
+    transform: translateY(-3px);
+}
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.hero,
+.sidebar,
+.content-section {
+    width: 100%;
+}
+
+.sidebar-heading button {
+    flex-shrink: 0;
+}
+
+.account-actions {
+    justify-content: flex-start;
+}
+
+.search button {
+    align-self: flex-start;
+}
