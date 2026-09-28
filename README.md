@@ -10,4 +10,6 @@ Quando era para rodar o site a biblioteca do lado ficou sobrepondo as musicas fa
 
 Botei na IA para corrigir alguns erros de digitação tambem 
 
-Tambem usei para recriar so icones de artistas, no site original tava muito diferente. S
+Tambem usei para recriar so icones de artistas, no site original tava muito diferente. 
+
+No html tive que usar IA para arrumar um erro que não tava enviando a resposta do formulario para outra pagina 
