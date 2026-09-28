@@ -1,6 +1,8 @@
 # spotify-front-end-In-cio-Gustavo
 Nosso trabalho front end do spotify
 
+Gustavo Trevisan RA1139626
+Inácio Alves -  RA1139718
 
 
 Na parte de CSS
