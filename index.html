@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,443 +14,448 @@
 
     <div class="app">
 
-       <header class="topbar">
+        <header class="topbar">
 
-    <a class="brand" href="#" aria-label="Spotify - página inicial">
-        <span class="brand-mark" aria-hidden="true">●</span>
-        <span>Spotify</span>
-    </a>
+            <a class="brand" href="#" aria-label="Spotify - página inicial">
+                <span class="brand-mark" aria-hidden="true">●</span>
+                <span>Spotify</span>
+            </a>
 
-    <nav class="topnav" aria-label="Navegação principal">
+            <nav class="topnav" aria-label="Navegação principal">
 
-        <a href="#inicio">Início</a>
-        <a href="#biblioteca">Biblioteca</a>
-        <a href="#artistas">Artistas</a>
+                <a href="#inicio">Início</a>
+                <a href="#biblioteca">Biblioteca</a>
+                <a href="#artistas">Artistas</a>
 
-    </nav>
+            </nav>
 
-    <form class="search" action="#" method="get">
+            <form class="search" action="resultado.html" method="post">
 
-        <label for="busca">Buscar</label>
+                <label for="busca">Buscar</label>
 
-        <input
-            id="busca"
-            name="busca"
-            type="search"
-            placeholder="O que você quer ouvir?"
-            autocomplete="off"
-        >
+                <input
+                    id="busca"
+                    name="busca"
+                    type="search"
+                    placeholder="O que você quer ouvir?"
+                    autocomplete="off"
+                >
 
-        <button type="submit">
-            Buscar
-        </button>
+                <button type="submit">
+                    Buscar
+                </button>
 
-    </form>
+            </form>
 
-    <div class="account-actions">
+            <div class="account-actions">
 
-        <a href="#">
-            Inscrever-se
-        </a>
+                <a href="#">
+                    Inscrever-se
+                </a>
 
-        <a class="login" href="#">
-            Entrar
-        </a>
+                <a class="login" href="#">
+                    Entrar
+                </a>
 
-    </div>
+            </div>
 
-</header>
+        </header>
+
 
         <main class="content" id="inicio">
 
-    <aside class="sidebar" id="biblioteca">
+            <aside class="sidebar" id="biblioteca">
 
-        <div class="sidebar-heading">
+                <div class="sidebar-heading">
 
-            <h2>Sua Biblioteca</h2>
+                    <h2>Sua Biblioteca</h2>
 
-            <button
-                type="button"
-                aria-label="Criar nova playlist"
+                    <button
+                        type="button"
+                        aria-label="Criar nova playlist"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+                <div class="library-card">
+
+                    <h3>
+                        Crie sua primeira playlist
+                    </h3>
+
+                    <p>
+                        É fácil, nós ajudamos você.
+                    </p>
+
+                    <a href="#">
+                        Criar playlist
+                    </a>
+
+                </div>
+
+                <div class="library-card">
+
+                    <h3>
+                        Encontre podcasts para seguir
+                    </h3>
+
+                    <p>
+                        Vamos manter você atualizado sobre novos episódios.
+                    </p>
+
+                    <a href="#">
+                        Explorar podcasts
+                    </a>
+
+                </div>
+
+            </aside>
+
+
+            <section class="hero" aria-labelledby="titulo-principal">
+
+                <p class="eyebrow">
+                    Spotify
+                </p>
+
+                <h1 id="titulo-principal">
+                    Tudo que você quer ouvir.
+                </h1>
+
+                <p>
+                    Descubra músicas, artistas, álbuns e podcasts
+                    em um só lugar.
+                </p>
+
+            </section>
+
+
+            <section class="content-section" aria-labelledby="musicas">
+
+                <div class="section-heading">
+
+                    <h2 id="musicas">
+                        Músicas em alta
+                    </h2>
+
+                    <a href="#">
+                        Mostrar tudo
+                    </a>
+
+                </div>
+
+
+                <div class="card-grid">
+
+                    <article class="music-card">
+
+                        <div
+                            class="cover cover-one"
+                            role="img"
+                            aria-label="Capa abstrata em tons de roxo e azul"
+                        ></div>
+
+                        <h3>
+                            Vibin
+                        </h3>
+
+                        <p>
+                            Wxoda
+                        </p>
+
+                        <button
+                            type="button"
+                            aria-label="Reproduzir Vibin"
+                        >
+                            ▶
+                        </button>
+
+                    </article>
+
+
+                    <article class="music-card">
+
+                        <div
+                            class="cover cover-two"
+                            role="img"
+                            aria-label="Capa abstrata em tons de vermelho e laranja"
+                        ></div>
+
+                        <h3>
+                            Homecoming
+                        </h3>
+
+                        <p>
+                            Kanye West, Chris Martin
+                        </p>
+
+                        <button
+                            type="button"
+                            aria-label="Reproduzir Homecoming"
+                        >
+                            ▶
+                        </button>
+
+                    </article>
+
+
+                    <article class="music-card">
+
+                        <div
+                            class="cover cover-three"
+                            role="img"
+                            aria-label="Capa abstrata em tons de verde"
+                        ></div>
+
+                        <h3>
+                            CLICK
+                        </h3>
+
+                        <p>
+                            JISOO
+                        </p>
+
+                        <button
+                            type="button"
+                            aria-label="Reproduzir CLICK"
+                        >
+                            ▶
+                        </button>
+
+                    </article>
+
+
+                    <article class="music-card">
+
+                        <div
+                            class="cover cover-four"
+                            role="img"
+                            aria-label="Capa abstrata em tons de amarelo"
+                        ></div>
+
+                        <h3>
+                            Chicken Fried
+                        </h3>
+
+                        <p>
+                            Zac Brown Band
+                        </p>
+
+                        <button
+                            type="button"
+                            aria-label="Reproduzir Chicken Fried"
+                        >
+                            ▶
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <section
+                class="content-section"
+                id="artistas"
+                aria-labelledby="artistas-titulo"
             >
-                +
-            </button>
 
-        </div>
+                <div class="section-heading">
 
-        <div class="library-card">
+                    <h2 id="artistas-titulo">
+                        Artistas populares
+                    </h2>
 
-            <h3>
-                Crie sua primeira playlist
-            </h3>
+                    <a href="#">
+                        Mostrar tudo
+                    </a>
 
-            <p>
-                É fácil, nós ajudamos você.
-            </p>
+                </div>
 
-            <a href="#">
-                Criar playlist
-            </a>
 
-        </div>
+                <div class="artist-grid">
 
-        <div class="library-card">
+                    <article class="artist-card">
 
-            <h3>
-                Encontre podcasts para seguir
-            </h3>
+                        <div
+                            class="artist-image artist-one"
+                            role="img"
+                            aria-label="Imagem representativa do artista Kendrick Lamar"
+                        ></div>
 
-            <p>
-                Vamos manter você atualizado sobre novos episódios.
-            </p>
+                        <h3>
+                            Kendrick Lamar
+                        </h3>
 
-            <a href="#">
-                Explorar podcasts
-            </a>
+                        <p>
+                            Artista
+                        </p>
 
-        </div>
+                    </article>
 
-    </aside>
 
+                    <article class="artist-card">
 
-    <section class="hero" aria-labelledby="titulo-principal">
+                        <div
+                            class="artist-image artist-two"
+                            role="img"
+                            aria-label="Imagem representativa do artista Drake"
+                        ></div>
 
-        <p class="eyebrow">
-            Spotify
-        </p>
+                        <h3>
+                            Drake
+                        </h3>
 
-        <h1 id="titulo-principal">
-            Tudo que você quer ouvir.
-        </h1>
+                        <p>
+                            Artista
+                        </p>
 
-        <p>
-            Descubra músicas, artistas, álbuns e podcasts
-            em um só lugar.
-        </p>
+                    </article>
 
-    </section>
-<section class="content-section" aria-labelledby="musicas">
 
-    <div class="section-heading">
+                    <article class="artist-card">
 
-        <h2 id="musicas">
-            Músicas em alta
-        </h2>
+                        <div
+                            class="artist-image artist-three"
+                            role="img"
+                            aria-label="Imagem representativa do artista The Weeknd"
+                        ></div>
 
-        <a href="#">
-            Mostrar tudo
-        </a>
+                        <h3>
+                            The Weeknd
+                        </h3>
 
-    </div>
+                        <p>
+                            Artista
+                        </p>
 
+                    </article>
 
-    <div class="card-grid">
 
-        <article class="music-card">
+                    <article class="artist-card">
 
-            <div
-                class="cover cover-one"
-                role="img"
-                aria-label="Capa abstrata em tons de roxo e azul"
-            ></div>
+                        <div
+                            class="artist-image artist-four"
+                            role="img"
+                            aria-label="Imagem representativa do artista Rihanna"
+                        ></div>
 
-            <h3>
-                Vibin
-            </h3>
+                        <h3>
+                            Rihanna
+                        </h3>
 
-            <p>
-                Wxoda
-            </p>
+                        <p>
+                            Artista
+                        </p>
 
-            <button
-                type="button"
-                aria-label="Reproduzir Vibin"
-            >
-                ▶
-            </button>
+                    </article>
 
-        </article>
+                </div>
 
+            </section>
 
-        <article class="music-card">
 
-            <div
-                class="cover cover-two"
-                role="img"
-                aria-label="Capa abstrata em tons de vermelho e laranja"
-            ></div>
+            <section class="content-section" aria-labelledby="albuns">
 
-            <h3>
-                Homecoming
-            </h3>
+                <div class="section-heading">
 
-            <p>
-                Kanye West, Chris Martin
-            </p>
+                    <h2 id="albuns">
+                        Álbuns e singles populares
+                    </h2>
 
-            <button
-                type="button"
-                aria-label="Reproduzir Homecoming"
-            >
-                ▶
-            </button>
+                    <a href="#">
+                        Mostrar tudo
+                    </a>
 
-        </article>
+                </div>
 
 
-        <article class="music-card">
+                <div class="album-grid">
 
-            <div
-                class="cover cover-three"
-                role="img"
-                aria-label="Capa abstrata em tons de verde"
-            ></div>
+                    <article class="album-card">
 
-            <h3>
-                CLICK
-            </h3>
+                        <div
+                            class="album-cover album-one"
+                            role="img"
+                            aria-label="Capa abstrata de álbum"
+                        ></div>
 
-            <p>
-                JISOO
-            </p>
+                        <h3>
+                            HIT ME HARD AND SOFT
+                        </h3>
 
-            <button
-                type="button"
-                aria-label="Reproduzir CLICK"
-            >
-                ▶
-            </button>
+                        <p>
+                            Billie Eilish
+                        </p>
 
-        </article>
+                    </article>
 
 
-        <article class="music-card">
+                    <article class="album-card">
 
-            <div
-                class="cover cover-four"
-                role="img"
-                aria-label="Capa abstrata em tons de amarelo"
-            ></div>
+                        <div
+                            class="album-cover album-two"
+                            role="img"
+                            aria-label="Capa abstrata de álbum"
+                        ></div>
 
-            <h3>
-                Chicken Fried
-            </h3>
+                        <h3>
+                            GNX
+                        </h3>
 
-            <p>
-                Zac Brown Band
-            </p>
+                        <p>
+                            Kendrick Lamar
+                        </p>
 
-            <button
-                type="button"
-                aria-label="Reproduzir Chicken Fried"
-            >
-                ▶
-            </button>
+                    </article>
 
-        </article>
 
-    </div>
+                    <article class="album-card">
 
-</section>
+                        <div
+                            class="album-cover album-three"
+                            role="img"
+                            aria-label="Capa abstrata de álbum"
+                        ></div>
 
+                        <h3>
+                            MUSIC
+                        </h3>
 
-<section
-    class="content-section"
-    id="artistas"
-    aria-labelledby="artistas-titulo"
->
+                        <p>
+                            Playboi Carti
+                        </p>
 
-    <div class="section-heading">
+                    </article>
 
-        <h2 id="artistas-titulo">
-            Artistas populares
-        </h2>
 
-        <a href="#">
-            Mostrar tudo
-        </a>
+                    <article class="album-card">
 
-    </div>
+                        <div
+                            class="album-cover album-four"
+                            role="img"
+                            aria-label="Capa abstrata de álbum"
+                        ></div>
 
+                        <h3>
+                            Short n' Sweet
+                        </h3>
 
-    <div class="artist-grid">
+                        <p>
+                            Sabrina Carpenter
+                        </p>
 
-        <article class="artist-card">
+                    </article>
 
-            <div
-                class="artist-image artist-one"
-                role="img"
-                aria-label="Imagem representativa do artista Kendrick Lamar"
-            ></div>
+                </div>
 
-            <h3>
-                Kendrick Lamar
-            </h3>
+            </section>
 
-            <p>
-                Artista
-            </p>
+        </main>
 
-        </article>
-
-
-        <article class="artist-card">
-
-            <div
-                class="artist-image artist-two"
-                role="img"
-                aria-label="Imagem representativa do artista Drake"
-            ></div>
-
-            <h3>
-                Drake
-            </h3>
-
-            <p>
-                Artista
-            </p>
-
-        </article>
-
-
-        <article class="artist-card">
-
-            <div
-                class="artist-image artist-three"
-                role="img"
-                aria-label="Imagem representativa do artista The Weeknd"
-            ></div>
-
-            <h3>
-                The Weeknd
-            </h3>
-
-            <p>
-                Artista
-            </p>
-
-        </article>
-
-
-        <article class="artist-card">
-
-            <div
-                class="artist-image artist-four"
-                role="img"
-                aria-label="Imagem representativa do artista Rihanna"
-            ></div>
-
-            <h3>
-                Rihanna
-            </h3>
-
-            <p>
-                Artista
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<section class="content-section" aria-labelledby="albuns">
-
-    <div class="section-heading">
-
-        <h2 id="albuns">
-            Álbuns e singles populares
-        </h2>
-
-        <a href="#">
-            Mostrar tudo
-        </a>
-
-    </div>
-
-
-    <div class="album-grid">
-
-        <article class="album-card">
-
-            <div
-                class="album-cover album-one"
-                role="img"
-                aria-label="Capa abstrata de álbum"
-            ></div>
-
-            <h3>
-                HIT ME HARD AND SOFT
-            </h3>
-
-            <p>
-                Billie Eilish
-            </p>
-
-        </article>
-
-
-        <article class="album-card">
-
-            <div
-                class="album-cover album-two"
-                role="img"
-                aria-label="Capa abstrata de álbum"
-            ></div>
-
-            <h3>
-                GNX
-            </h3>
-
-            <p>
-                Kendrick Lamar
-            </p>
-
-        </article>
-
-
-        <article class="album-card">
-
-            <div
-                class="album-cover album-three"
-                role="img"
-                aria-label="Capa abstrata de álbum"
-            ></div>
-
-            <h3>
-                MUSIC
-            </h3>
-
-            <p>
-                Playboi Carti
-            </p>
-
-        </article>
-
-
-        <article class="album-card">
-
-            <div
-                class="album-cover album-four"
-                role="img"
-                aria-label="Capa abstrata de álbum"
-            ></div>
-
-            <h3>
-                Short n' Sweet
-            </h3>
-
-            <p>
-                Sabrina Carpenter
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-</main>
 
         <footer class="footer">
 
@@ -458,4 +464,5 @@
     </div>
 
 </body>
-</html> 
+
+</html>
